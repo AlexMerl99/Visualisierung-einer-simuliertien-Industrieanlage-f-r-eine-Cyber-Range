@@ -23,7 +23,6 @@ let countGateClosing = 0;
 
 //STARTPROGRAM
 // eslint-disable-next-line no-undef
-//delay();
 var i = 0
 
 // eslint-disable-next-line no-unused-vars
@@ -35,7 +34,6 @@ function startProgram(){
 }
 
 function startTimers(){
-    //Timeout()
     TimeoutTank()
 }
 // eslint-disable-next-line no-unused-vars
@@ -149,9 +147,7 @@ function drawGlass() {
             .attr('width', 30)
 
 
-  /*  for(let amount=0; amount == bottleMovement.length; amount++) {
-        bottleMovement[amount].attr("x",496 -f)
-    }*/
+  
     countGateClosing++;
 
 
@@ -238,7 +234,6 @@ function startPipe(){
 
         // eslint-disable-next-line no-undef
         pipe1.transition().ease(d3.easeLinear)
-            //.delay(0)
             .duration(500)
             .attr("width", 250)
 
