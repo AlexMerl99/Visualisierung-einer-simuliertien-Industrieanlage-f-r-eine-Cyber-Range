@@ -1,17 +1,192 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src ="main.js">  </script>
+    <script src="https://unpkg.com/vue@3.0.5"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Abfüllanlage</title>
+
+    <style>
+        .bt1 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 85px;
+            left: 105px;
+
+        }
+
+
+        .bt2 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 565px;
+            left: 95px;
+
+        }
+
+
+
+        .Display1 {
+         background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 85px;
+            left: 280px;
+
+
+        }
+        .Display2 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 85px;
+            left: 690px;
+
+
+        }
+
+        .Display3 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 205px;
+            left: 280px;
+
+
+        }
+
+        .Display4 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 145px;
+            left: 280px;
+
+
+        }
+
+        .Display5 {
+            background-color: #C40006;
+            border: none;
+            color: white;
+            padding: 20px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 145px;
+            left: 690px;
+
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body onload="main()" >
+
+
+
+
+
+
+
+<script src="src/fillFunctions.js" >
+
+
+
+</script>
+
+
+<input id= "Startbutton" type="button" class="bt1" value="Start" onclick="startProgram(); updateValue(); updateTank();">
+<input id="Reset" type="button" class="bt2" value="Neustart" onclick = location.reload() >
+<div id="FillingPercentage"  class="Display1" >Füllstand Flasche = 0%</div>
+<div id="FlowLevel"  class="Display2" >Flowlevel :</div>
+<!--<div id="BottleFilling"  class="Display3" >Füllstand Flasche = 0%</div>-->
+<div id="TankFilling"  class="Display4"  >Füllstand Tank = 100%</div>
+<div id="bottlecount"  class="Display5" ></div>
+<script>
+
+    var adding = x
+    document.getElementById("bottlecount").innerHTML = "Anzahl Flaschen: " + adding;
+
+</script>
+
+
+
+
+
+
+</body>
 </html>
