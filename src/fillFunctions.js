@@ -1,12 +1,9 @@
 //Globale Variablen
 
 var x = Math.floor(Math.random()*(20-1)+1); //Anzahl Flaschen
-//var f = 50 //Bewegung der Flaschen in Pixel
+
 let e ;//Füllstand  der Flasche in Pixel (Fehler)
-//var b = x  // Wie viel vom Tank ausgeleert wird
-//let pace = 100/(e*1.25)
-//let u = 0; //Update Füllstand
-//let count=0; //Timeout stopper
+
 let c = 400 //Füllstand Tank Prozent
 
 // eslint-disable-next-line no-undef
