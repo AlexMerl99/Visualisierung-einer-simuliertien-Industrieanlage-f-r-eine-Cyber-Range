@@ -1,11 +1,24 @@
-# Visualisierung-einer-simulierten-Industrieanlage-fuer-eine-Cyber-Range
+# projektseminar_dthree
 
-Für die Visualisierung habe ich immer die main.js, die fillFunctions.js, index.html und Style.css offen.
+## Project setup
+```
+npm install
+```
 
-Archive.js ist nicht relevant, da sind alle verworfenen Überlegungen drinnen.
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Ebenso nicht relevant sollten Anlagenfortschritt.html und App.vue sein, denke ich, hab es aber zur Sicherheit drinnen gelassen, ich hoffe jetzt geht alles.
+### Compiles and minifies for production
+```
+npm run build
+```
 
-Fehler von index.html bzgl. fehlendem Code sollte behoben sein.
+### Lints and fixes files
+```
+npm run lint
+```
 
-Zudem gab es einen Fehler in Vue beim Wechsel von var zu let, weshalb manche Variablen noch vars sind.
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
